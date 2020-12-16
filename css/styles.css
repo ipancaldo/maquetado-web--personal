@@ -1,0 +1,74 @@
+.header {
+  height: 35vh;
+  /* background-image: url("../images/banner1.jpg"); */
+  /* background-image: url("../images/space-1572212_1920.png"); */
+  background-image: url("../images/universe-1566159_1920.jpg");
+  /* background-image: url("../images/banner-1571858_1920.jpg"); */
+  /* background-image: url("../images/color-1241879_1920.jpg"); */
+  /* background-position-x: */
+  /* background-position-y: -150px; */
+  background-position-y: center;
+  background-size: cover;
+}
+
+.fondo-triangulos {
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+/* .tomato {
+  background: tomato;
+}
+
+.rebecca {
+  background: rebeccapurple;
+}
+*/
+
+.subrayar {
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 72px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+
+.icon:hover {
+  transform: scale(1.5) rotate(360deg);
+  transition-duration: 400ms;
+  /* opacity: 0.4; */
+  transition-timing-function: ease-out;
+  filter: grayscale(80);
+}
+/*
+.footer {
+  background: ghostwhite;
+  height: 250px; 
+ } */
+
+.frase-texto {
+  color: cadetblue;
+  font-size: 35px;
+}
+
+.frase {
+  background: #e8ced4;
+  height: auto;
+}
+
+.footer {
+  background: darkslategray;
+  color: ghostwhite;
+}
+
+textarea {
+  resize: none;
+}
+
+.volver {
+  margin-top: 30px;
+  position: absolute;
+  right: 20%;
+}

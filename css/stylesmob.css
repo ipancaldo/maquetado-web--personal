@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh; /*que tome el 100% del view x height*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.contenedor-celular {
+  width: 320px;
+  height: 500px;
+  background-color: #2f3640;
+  border-radius: 10px;
+  /* margin-top: 4%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.caja-superior {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  padding: 3px;
+}
+
+.audio {
+  position: absolute;
+  background-color: gainsboro;
+  width: 80px;
+  height: 6px;
+  border-radius: 80px;
+  border: 1px solid grey;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+/* .camara {
+  display: block;
+  background-color: #2c3a47;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  border: 0.5px solid gainsboro;
+  position: absolute;
+  right: 11%;
+} */
+
+.lente-camara {
+  display: block;
+  border: 1px solid gray;
+  background-color: #596275;
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  position: absolute;
+  right: 12%;
+}
+
+.notificaciones {
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 50px;
+  position: absolute;
+  left: 10%;
+
+  animation: efectonacho;
+  /* animation: efectonacho 2s inifite 10s; */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+}
+
+@keyframes efectonacho {
+  /* from {
+    background-color: blue;
+  }
+  to {
+    background-color: tomato;
+  } */
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: violet;
+  }
+  100% {
+    background-color: tomato;
+  }
+}
+
+.pantalla {
+  height: 420px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-image: url(../images/universe.jpg);
+  background-size: cover;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+
+.pantalla:hover {
+  opacity: 0.5;
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.caja-inferior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.boton-inicio {
+  width: 60px;
+  height: 20px;
+  border-radius: 9px;
+  border: 1px solid white;
+  background-color: #1e272e;
+  cursor: pointer;
+}
